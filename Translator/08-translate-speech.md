@@ -41,28 +41,23 @@ If you don't already have on in your subscription, you'll need to provision a **
 In this exercise, you'll execute the client application that uses the Azure AI Speech SDK to recognize, translate, and synthesize speech.
 
 
-1. In Visual Studio Code, in the **Explorer** pane, Open **08-speech-translation** folder and expand the **C-Sharp** or **Python** folder depending on your language preference.
-1. Right-click the **translator** folder and open an integrated terminal. Then install the Speech SDK package by running the appropriate command for your language preference:
+1. In Visual Studio Code, in the **Explorer** pane, Open **Speech-Services** folder.
+2. Right-click the **translator** folder and open an integrated terminal. Then install the Speech SDK package and other packages by running the foloowing commands.
 
     ```
 
-    **Python**
-
-    ```python
+    pip install azure-cognitiveservices-speech==1.30.0
+    
+    ```
+    
+    ```
     pip install playsound==1.3.0
     ```
 
+3. Expand the  **translator** folder and click on translator.py to open the file. Then Replace the cog_key and cog_region with your Azure Speech service key and region in which speech service is deployed.Then Save the file using CTRL+S.
+4. In the terminal type **python translator.py** to run the translator.py file.
+5. When prompted, enter a valid language code (*fr*, *es*, or *hi*), and then speak clearly into the microphone and say a phrase you might use when traveling abroad. The program should transcribe your spoken input and respond with a spoken translation. Repeat this process, trying each language supported by the application. When you're finished, press **ENTER** to end the program.
 
-    **Python**
-
-    ```python
-    python translator.py
-    ```
-
-1. When prompted, enter a valid language code (*fr*, *es*, or *hi*), and then speak clearly into the microphone and say a phrase you might use when traveling abroad. The program should transcribe your spoken input and respond with a spoken translation. Repeat this process, trying each language supported by the application. When you're finished, press **ENTER** to end the program.
-
-> [!NOTE]
-> *In this example, you've used a **SpeechTranslationConfig** to translate speech to text, and then used a **SpeechConfig** to synthesize the translation as speech. You can in fact use the **SpeechTranslationConfig** to synthesize the translation directly, but this only works when translating to a single language, and results in an audio stream that is typically saved as a file rather than sent directly to a speaker.*
 
 ## More information
 
