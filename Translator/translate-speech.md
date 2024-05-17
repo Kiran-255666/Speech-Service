@@ -56,7 +56,7 @@ In this exercise, you'll execute the client application that uses the Azure AI S
 
 3. Expand the  **translator** folder and click on translator.py to open the file. Then Replace the cog_key and cog_region with your Azure Speech service key and region in which speech service is deployed.Then Save the file using CTRL+S.
 4. In the terminal type **python translator.py** to run the translator.py file.
-5. When prompted, enter a valid language code (*fr*, *es*, or *hi*), and then speak clearly into the microphone and say a phrase you might use when traveling abroad. The program should transcribe your spoken input and respond with a spoken translation. Repeat this process, trying each language supported by the application. When you're finished, press **ENTER** to end the program.
+5. When prompted, enter a valid language code (*fr*, *es*, or *hi*). The program should transcribe your audio input and respond with a spoken translation. Repeat this process, trying each language supported by the application. When you're finished, press **ENTER** to end the program.
 
 
 ## More information
