@@ -16,7 +16,7 @@ Azure AI Speech includes a speech translation API that you can use to translate 
 
 
 1. Start Visual Studio Code.
-2. Open the palette (SHIFT+CTRL+P) and run a **Git: Clone** command to clone the '(https://github.com/Kiran-255666/Speech-Service.git)` repository to a local folder (it doesn't matter which folder).
+2. Open the palette (SHIFT+CTRL+P) and run a **Git: Clone** command to clone the 'https://github.com/Kiran-255666/Speech-Service` repository to a local folder (it doesn't matter which folder).
 3. When the repository has been cloned, open the folder in Visual Studio Code.
 
 
