@@ -15,7 +15,7 @@ def main():
         cog_key = '66a225f8281042b3ab91b716a229f40c'
         cog_region = 'eastus'
 
-        # Configure translation
+        
         # Configure translation
         translation_config = speech_sdk.translation.SpeechTranslationConfig(cog_key, cog_region)
         translation_config.speech_recognition_language = 'en-US'
@@ -25,7 +25,7 @@ def main():
         print('Ready to translate from',translation_config.speech_recognition_language)
 
 
-        # Configure speech
+        
         # Configure speech
         speech_config = speech_sdk.SpeechConfig(cog_key, cog_region)
 
@@ -46,7 +46,7 @@ def main():
 def Translate(targetLanguage):
     translation = ''
 
-    # Translate speech
+   
     # Translate speech
     audioFile = 'station.wav'
     playsound(audioFile)
